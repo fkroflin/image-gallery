@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Ropa+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(84, 84, 78);
+  background-size: contain;
+  height: 100vh;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  font-family: 'Ropa Sans', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(144, 139, 123);
+  width: 100%;
+  height: 40px;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 0.5rem;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+
+.soc-list {
+  display: flex;
+  margin-right: 0.5rem;
+  align-items: center;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 200ms ease-in;
+}
+
+.nav-item a:hover {
+  color: rgb(184, 144, 12);
+}
+
+
+.soc-item {
+  list-style: none;
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.soc-item a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 200ms ease-in;
+}
+
+.soc-item a:hover {
+  color: rgb(184, 144, 12);
+}
+
+section {
+  display: grid;
+  grid-template-areas:
+    "contact     privacy    privacy    artists"
+    "...         questions  questions  ..."
+    "...         questions  questions  ..."
+  ;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  padding-top: 20px;
+  padding: 20px;
+}
+
+.artists {
+  grid-area: artists;
+}
+
+.questions {
+  grid-area: questions;
+}
+
+.privacy {
+  grid-area: privacy;
+}
+
+.podrucje {
+  background-color: transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 20px;
+  font-family: 'Ropa Sans', sans-serif;
+  margin-top: 30px;
+  border: solid rgb(144, 139, 123);
+  color: wheat;
+  box-shadow: 10px 10px 5px black;
+}
+
+.artists {
+  max-width: 400px;
+  justify-self: end;
+  background-color: rgb(144, 139, 123);
+}
+
+.contact {
+  background-color: rgb(144, 139, 123);
+}
+
+.artists h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.artists p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.artists ul {
+  margin-left: 22px;
+}
+
+.artists ul li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.contact h3 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.faq-item {
+  margin-bottom: 30px;
+}
+
+.faq-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.questions h2 {
+  margin-bottom: 15px;
+}
+
+.privacy h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.privacy h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.privacy p {
+  font-size: 16px;
+}
+
+.contact img {
+  width: 200px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
